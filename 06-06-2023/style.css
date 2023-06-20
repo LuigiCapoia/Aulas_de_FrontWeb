@@ -1,0 +1,151 @@
+@import url('https://rsms.me/inter/inter.css');
+
+
+
+
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+
+
+/* ////////////////////////////////////////////// */
+
+.titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+.container {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem;
+  --color-light: white;
+  --color-dark: #212121;
+  --color-signal: #fab700;
+
+  --color-background: var(--color-light);
+  --color-text: var(--color-dark);
+  --color-accent: var(--color-signal);
+
+  --size-bezel: .5rem;
+  --size-radius: 4px;
+
+  line-height: 1.4;
+
+  font-family: 'Inter', sans-serif;
+  font-size: calc(.6rem + .4vw);
+  color: var(--color-text);
+  background: var(--color-background);
+  font-weight: 300;
+  padding: 0 calc(var(--size-bezel) * 3);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+}
+
+mark {
+  background: var(--color-accent);
+  color: var(--color-text);
+  font-weight: bold;
+  padding: 0 0.2em;
+}
+
+.form-group {
+  background: var(--color-background);
+  padding: calc(4 * var(--size-bezel));
+  margin-top: calc(4 * var(--size-bezel));
+  border-radius: var(--size-radius);
+  border: 3px solid var(--color-shadow, currentColor);
+  box-shadow: .5rem .5rem 0 var(--color-shadow, currentColor);
+
+  &--inverted {
+    --color-background: var(--color-dark);
+    color: var(--color-light);
+    --color-shadow: var(--color-accent);
+  }
+
+  &--accent {
+    --color-background: var(--color-signal);
+    --color-accent: var(--color-light);
+    color: var(--color-dark);
+  }
+
+  *:first-child {
+    margin-top: 0;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  background: var(--color-background);
+  padding: calc(4 * var(--size-bezel));
+  margin-top: calc(4 * var(--size-bezel));
+  border-radius: var(--size-radius);
+  border: 3px solid var(--color-shadow, currentColor);
+  box-shadow: .5rem .5rem 0 var(--color-shadow, currentColor);
+
+  &--inverted {
+    --color-background: var(--color-dark);
+    color: var(--color-light);
+    --color-shadow: var(--color-accent);
+  }
+
+  &--accent {
+    --color-background: var(--color-signal);
+    --color-accent: var(--color-light);
+    color: var(--color-dark);
+  }
+
+  *:first-child {
+    margin-top: 0;
+  }
+}
+
+th,
+td {
+  border: 1px solid #000;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
