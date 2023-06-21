@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+
+body {
+	background: linear-gradient(to right, rgb(105, 107, 106), rgb(58, 58, 58) );
+	color: white;
+	margin: 0;
+}
+
+#cards-container {
+	padding: 40px;
+	margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+    color: #1add00;
+	font-family: 'Tilt Prism', cursive;
+}
+
+
+.card {
+    background-color: #000000;
+	list-style: none;
+	color: #06f1f1;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+    border: 1px solid #1add00;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.card::after {
+	content: "";
+  display: block;
+  width: 50%;
+  height: 45%;
+  border-radius: 100%;
+  opacity: .7;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: #666;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+  }
+  
+  form label {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+  }
+  
+  form input[type="text"] {
+	width: 150px;
+	padding: 5px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border: none;
+  }
+  
+  form button {
+	padding: 10px 20px;
+	background-color: #06f1f1;
+	color: #000000;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+	background-color: #06f1f1;
+  }
+  
